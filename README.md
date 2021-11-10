@@ -91,7 +91,7 @@ Example:
     allowAttributes: {'class': ['*']}
   });
 
-  const untrusted_example = "Well, <em class=nonchalant onclick='alert(\'General Kenobi\');'><a href='https://obiwan.org/home.php'>hello there<a>!"
+  const untrusted_example = "Well, <em class="nonchalant" onclick='alert(\'General Kenobi\');'><a href='https://obiwan.org/home.php'>hello there<a>!</em>"
   sanitizer.sanitize(untrusted_example);  // Well, <em class="nonchalant"><a href='https://obiwan.org/home.php'>hello there<a>!</em>
   for_display.sanitize(untrusted_example);  // Well, <em class="nonchalant">hello there!</em>
 
